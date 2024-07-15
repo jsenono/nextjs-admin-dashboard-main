@@ -1,0 +1,28 @@
+<img src="../../images/steering/steering.svg" alt="Steering Wheel" />
+
+import CameraSelector from '@/components/cameras/webcam/peer/CameraSelector';
+
+
+
+
+  <div className="w-1/5 mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 relative">
+            
+            
+            <input
+                id="slider"
+                type="range"
+                min="0"
+                max="100"
+                value={sliderValue}
+                onChange={handleSliderChange}
+                className="custom-slider appearance-none w-25 h-2 rounded-full bg-gray-200 outline-none overflow-visible z-10"
+                style={{
+                    
+                    '--thumb-color': '#4F46E5', // Adjust thumb color
+                    '--thumb-protrusion': '-10px', // Adjust how much thumb protrudes outside
+                }}
+            />
+            <div className="text-center mt-4 relative z-10">
+                <span className="text-lg font-bold text-gray-700">{sliderValue}</span>
+            </div>
+        </div>
